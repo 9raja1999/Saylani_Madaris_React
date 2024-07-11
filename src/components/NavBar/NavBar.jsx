@@ -15,16 +15,24 @@ function NavBar() {
             }}
         >
             <AnchorLink
-                text='Vite'
-                link="https://vitejs.dev/"
+                text='Home'
+                link="/"
+                type="internal"
+                />
+            <AnchorLink
+                text='Contact'
+                link="/contact"
+                type="internal"
+                />
+            <AnchorLink
+                text='About'
+                link='/about'
+                type="internal"
             />
             <AnchorLink
-                text='Strapi'
-                link="https://strapi.io/"
-            />
-            <AnchorLink
-                text='October cms'
-                link='https://octobercms.com/'
+                text='facebook'
+                link='https://www.facebook.com'
+                type="external"
             />
         </nav>
     )

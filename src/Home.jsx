@@ -10,6 +10,7 @@ function Home() {
     // [variable name , function to update a variable] = useState(initial value)
     const [number, setNumber] = useState(1)
     // jab bhi state update hogi apka component dobara re render hoga
+    // any function imported from react if starting with use is called a hook
 
 
     const handleIncrement = useCallback(() => {
@@ -28,7 +29,6 @@ function Home() {
         // Props Handling
         // Memory?
         <>
-            <NavBar />
             <section>
                 <h1>{number}</h1>
                 <Button
@@ -46,9 +46,6 @@ function Home() {
                     action={handleDecrement}
                 />
             </section>
-
-            <Footer />
-
         </>
     )
 }
